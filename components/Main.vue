@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div>
    <div className="container">
      <div style="display:flex;flex-direction:row">
@@ -50,9 +50,8 @@
         <div class="title">
           Подбор новостройки в Краснодаре 287
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180376.82169436332!2d38.83286421003475!3d45.057642982401596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuQ!5e0!3m2!1sru!2sru!4v1686391582461!5m2!1sru!2sru" width="100%" height="199" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <button class="mainbtn">
-          
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180376.82169436332!2d38.83286421003475!3d45.057642982401596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04564714535b3%3A0xf720794f56c4beb6!2z0JrRgNCw0YHQvdC-0LTQsNGALCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuQ!5e0!3m2!1sru!2sru!4v1686391582461!5m2!1sru!2sru" width="806" height="199" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="mainbtn">          
           Смотреть на карте
           </button>
         <br>
@@ -66,13 +65,13 @@
           <div class="card__title">от 7 457 100 ₽</div>
           <div>ул. Старокубанская / ул. Селезнева ХБК</div>
         </div>
-        </a>  
+        </a> 
      </div>
      </div>
    </div>
   </div>
 </template>
-<script src="https://cdn.tailwindcss.com"></script>
+
 <script>
 
 export default {
@@ -95,88 +94,136 @@ export default {
 
 <style scoped>
 @font-face {
-  font-family: "Inter";
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: local("InterRegular.ttf"),
+         url("~/components/fonts/InterRegular.woff") format("woff");
+  }
+  .container{
+  width:1440px;
+  padding-left:114px;
+  padding-right:95px;
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 900;
-  src: local("InterRegular.ttf"),
-    url("~/components/fonts/InterRegular.woff") format("woff");
-}
-.container {
-  @apply w-[1440px] not-italic pl-[114px] pr-[95px];
-  font-family: "Inter";
-}
-.wrapp {
-  @apply flex flex-row;
-}
-.left {
-  @apply mr-[57px];
-}
-.left__block {
-  @apply mb-[18px];
-}
-.left__title {
-  @apply text-sm mb-[11px];
-  font-family: "Inter";
-}
-.left__sel {
-  @apply border p-2.5 rounded-[5px] border-solid border-[#9DA3AE];
-}
-.left__wrappchkbx {
-  @apply mr-10;
-}
-.left__chkbxtitle {
-  @apply mb-[11px];
-  font-family: "Inter";
-}
-.price {
-  @apply text-sm mb-[11px];
-  font-family: "Inter";
-}
-.price__wrapp {
-  @apply flex mb-[18px];
-}
-.price__inp {
-  @apply flex flex-row items-start gap-2.5 w-[127px] h-[35px] border mr-2.5 px-3 py-[9px] rounded-[5px] border-solid border-[#9DA3AE];
-}
-.change {
-  @apply text-sm mb-[11px];
-  font-family: "Inter";
-}
-.change__sell {
-  @apply border mb-[18px] p-2.5 rounded-[5px] border-solid border-[#9DA3AE];
-}
-.change__btnm {
-  @apply text-center;
-}
-.change__btn {
-  @apply w-[349px] h-10 text-[white] rounded-[5px];
-  background: #ec5340;
-}
-.title {
-  @apply text-[29px] leading-[35px] font-[bold] mb-[18px];
-  font-family: "Inter";
-}
-body {
-  font-family: "Inter" !important;
-}
-.mainbtn {
-  font-family: "Inter";
-  border: 1px solid;
-  width: 100%;
-  margin-bottom: 18px;
-  margin-top: 18px;
-}
-.sell {
-  @apply w-[197px] h-9 border mb-[23px] p-2.5 rounded-[5px] border-solid border-[#9DA3AE];
-}
-.card {
-  @apply w-[214px];
-}
-.card__paint {
-  @apply w-[214px] h-[214px];
-}
-.card__title {
-  @apply font-bold mb-[5px];
-}
-
+  }
+  .wrapp{
+  display:flex;
+  flex-direction:row;
+  }
+  .left{
+    margin-right:57px;
+  }
+  .left__block{
+    margin-bottom: 18px;
+  }
+  .left__title{
+    font-size: 14px; 
+    margin-bottom:11px;
+    font-family: 'Inter';
+    }
+  .left__sel{
+    border: 1px solid #9DA3AE; 
+    border-radius: 5px;
+    padding:10px
+  }
+  .flex{
+    display: flex;
+  }
+  .left__wrappchkbx{
+   margin-right:40px;
+  }
+  .left__chkbxtitle{
+    margin-bottom: 11px;
+    font-family: 'Inter';
+  }
+  .price{
+    font-size: 14px;
+    margin-bottom:11px;
+    font-family: 'Inter';
+  }
+  .price__wrapp{
+  display:flex;
+  margin-bottom:18px;
+  }
+  .price__inp{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 9px 12px;
+  gap: 10px;width: 127px;
+  height: 35px;
+  border: 1px solid #9DA3AE;
+  border-radius: 5px;
+  margin-right: 10px;
+  }
+  .change{
+    font-size: 14px; 
+    margin-bottom:11px;
+    font-family: 'Inter';
+  }
+  .change__sell{
+  border: 1px solid #9DA3AE; 
+  border-radius: 5px;
+  padding:10px;
+  margin-bottom:18px;
+  }
+  .change__btnm{
+  text-align:center;
+  }
+  .change__btn{
+  background: #EC5340;
+  border-radius: 5px;
+  width: 349px;
+  height: 40px;
+  color:white;
+  }
+  .title{
+    font-size: 29px;
+    line-height: 35px;
+    margin-bottom:18px;
+    font-weight: bold;
+    font-family: 'Inter';
+  }
+  body{
+   font-family: 'Inter'!important;
+  }
+  .mainbtn{
+  display: flex;
+  justify-content: center;
+  width:806px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  background-color:white;
+  padding:9px, 351px, 9px, 351px;
+  margin-top:28.5px;
+  cursor:pointer;
+  margin-bottom:59px;
+  }
+  .sell{
+    margin-bottom:23px;
+    width: 197px;
+    height: 36px;
+    border: 1px solid #9DA3AE;
+    border-radius: 5px;
+    padding:10px;
+  }
+  .card{
+    width:214px;
+  }
+  .card__paint{
+  width:214px;
+  height:214px;
+  }
+  .card__title{
+  margin-bottom:5px;
+  font-weight:700;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
 </style>

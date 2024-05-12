@@ -1,5 +1,5 @@
 {
-  "name": "tw",
+  "name": "projcss",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -15,8 +15,5 @@
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
   },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "^5.3.3",
-    "postcss": "^8.4.17"
-  }
+  "devDependencies": {}
 }
