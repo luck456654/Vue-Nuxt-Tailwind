@@ -1,17 +1,6 @@
-# tw
-
-## Build Setup
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+<b>Установка проекта</b>
+1)установите на ваш компьютер программы Node.js и Git (если еще не установлены)  
+2)склонируйте проект в пустую папку командой "git clone https://github.com/luck456654/Vue-Nuxt-Tailwind.git"
+3)в получившейся папке откройте терминал и выполните следующие команды
+а)npm install
+б)npm run dev
